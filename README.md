@@ -14,9 +14,9 @@
 > Fire Alarm System
 > Tinkercad link :
 
->> Room Lighting System
->> Tinkercad link :
+> Room Lighting System
+> Tinkercad link :
 
->> Smart Irrigation System
->>  Tinkercad link :
+> Smart Irrigation System
+> Tinkercad link :
 
