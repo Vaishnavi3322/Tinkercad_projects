@@ -1,0 +1,65 @@
+// C++ code for Blinking Multiple (two) LEDs 
+//
+int led1 = 13;
+int led2 = 8;
+
+void setup()
+{
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(led1, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(led1, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(led2, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(led2, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
+
+
+////////////////////////
+
+///////////////////////
+// C++ code for Blinking multiple LEDs at different time intervals
+//
+int red = 12;
+int green = 8;
+int orange = 4;
+
+void setup()
+{
+  pinMode(red, OUTPUT);
+  pinMode(green, OUTPUT);
+  pinMode(orange, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(red, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(red, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  // the second LED will blink two times
+  digitalWrite(green, HIGH);
+  delay(2000); // Wait for 1000 millisecond(s)
+  digitalWrite(green, LOW);
+  delay(2000); // Wait for 1000 millisecond(s)
+  digitalWrite(green, HIGH);  
+  delay(2000);   
+  digitalWrite(green, LOW);  
+  delay(2000);  
+   // the third LED will blink five times  
+  for( int i = 0; i < 5; i = i +1 )  
+  {  
+  digitalWrite(orange, HIGH);  
+  delay(500);   
+  digitalWrite(orange, LOW);  
+  delay(500);  
+    // Adjust the delay time accordingly  
+  }  
+}  
